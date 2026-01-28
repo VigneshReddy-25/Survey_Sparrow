@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vignesh Reddy — Frontend Developer</title>
+
+  <!-- Premium Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <strong>VIGNESH</strong>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero reveal">
+  <div class="hero-text">
+    <span class="badge">Frontend Developer</span>
+
+    <h1>
+      Crafting <span class="gradient-text">modern UI</span><br/>
+      that feels fast, fluid & premium.
+    </h1>
+
+    <p>
+      I design and build visually rich, motion-driven web experiences using HTML,
+      CSS, and JavaScript — focused on performance, usability, and real-world product feel.
+    </p>
+
+    <div class="cta-group">
+      <a href="#projects" class="btn btn-primary">Explore My Work</a>
+      <a 
+        href="https://drive.google.com/file/d/1PwBnRWHHSqmkOaSMDsp7vOpjAVr8wDGs/view?usp=drive_link" 
+        target="_blank"
+        class="btn btn-outline"
+      >
+        Download Resume
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <img src="22AT1A05b1.jpeg" alt="Vignesh Reddy" />
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-tight reveal">
+  <h2>About Me</h2>
+  <div class="about-grid">
+    <div class="card interactive">
+      <h3>🎓 Education</h3>
+      <p>B.Tech CSE — CGPA 8.23</p>
+    </div>
+
+    <div class="card interactive">
+      <h3>💼 Experience</h3>
+      <p>Web Developer Intern — Rooman Technologies</p>
+    </div>
+
+    <div class="card interactive">
+      <h3>🏆 Achievements</h3>
+      <p>NPTEL Gold Medallist, ServiceNow Certified</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section-tight reveal">
+  <h2>Featured Projects</h2>
+
+  <div class="projects">
+
+    <div class="project">
+      <img src="project-portfolio.png" alt="Portfolio UI" />
+      <div class="project-overlay">
+        <h4>Interactive Portfolio</h4>
+        <span>HTML • CSS • JavaScript</span>
+        <p class="project-desc">
+          Motion-driven personal portfolio with premium UI, hover effects,
+          scroll animations, and modern product-style layout.
+        </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="project-todo.png" alt="Todo App" />
+      <div class="project-overlay">
+        <h4>To-Do List Application</h4>
+        <span>Vanilla JS • Local Storage</span>
+        <p class="project-desc">
+          Task management app with real-time updates, persistent storage,
+          and clean UX for daily productivity.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section-tight reveal">
+  <h2>Gallery</h2>
+
+  <div class="gallery">
+    <div class="gallery-item" onclick="openLightbox('volleyball.jpg')">
+      <img src="volleyball.jpg" />
+      <span class="caption">Volleyball — Team Sports & Leadership</span>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('coding.jpg')">
+      <img src="coding.jpg" />
+      <span class="caption">Coding — Building & Debugging Interfaces</span>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('travel.jpg')">
+      <img src="travel.jpg" />
+      <span class="caption">Travel — Exploring & Global Inspiration</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-tight reveal">
+  <h2>Let's Connect</h2>
+
+  <div class="contact-grid">
+    <div class="card interactive">
+      📧 <strong>Email</strong><br/>
+      reddyvignesh731@gmail.com
+    </div>
+
+    <div class="card interactive">
+      💼 <strong>LinkedIn</strong><br/>
+      linkedin.com/in/vignesh-reddy-19595225b
+    </div>
+
+    <div class="card interactive">
+      🐙 <strong>GitHub</strong><br/>
+      github.com/VigneshReddy-25
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" />
+</div>
+
+<footer>
+  © 2026 Vignesh Reddy — Premium Frontend Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
